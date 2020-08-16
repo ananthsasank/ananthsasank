@@ -1,340 +1,255 @@
-  <!DOCTYPE html>
-  <html lang="en">
-      <head>
-        <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
-          <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  <link  rel='stylesheet' type='text/css'  href="aos.css">
-  <title>Ananth Sasank</title>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ananth Sasank</title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link  rel='stylesheet' type='text/css'  href="aos.css">
+  <style>
+      body, html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
 
-    <style>
-        body, html {
-    height: 100%;
-    scroll-behavior: smooth;
-  }
+.bg { 
+ 
+  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
 
-  .bg { 
+
+
+min-height:100%;
+
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+ 
+}
+
+
+#hi{
+    font-family: Poppins;
+    font-size: 86px;
+line-height: 100px;
+ padding-top: 100px;
+color: rgb(41, 41, 41);
+text-align: center;
+
+}
+#student{
+    font-family: Poppins;
+    font-size: 36px;
+line-height: 100px;
+
+color: rgb(48, 48, 48);
+text-align: center;
+
+
+}
+
+
+#header {
   
-    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
-
-
-
-  min-height:100%;
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   
-  }
-
-
-  #hi{
-      font-family: Poppins;
-      font-size: 86px;
-  line-height: 100px;
-  padding-top: 100px;
-  color: rgb(41, 41, 41);
+  
   text-align: center;
-
-  }
-  #student{
-      font-family: Poppins;
-      font-size: 36px;
-  line-height: 100px;
-
-  color: rgb(48, 48, 48);
-  text-align: center;
-
-
-  }
-
-
-  #header {
+  font-size: 20px; 
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+}
+.navbar {
+    transition: all 0.4s;
     
-    
-    
-    text-align: center;
-    font-size: 20px; 
-    font-weight: bold;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: 0.2s;
-  }
-  .navbar {
-      transition: all 0.4s;
-      
-  }
+}
 
-  .navbar .nav-link {
-      color: #fff;
-  }
+.navbar .nav-link {
+    color: #fff;
+}
 
-  .navbar .nav-link:hover,
-  .navbar .nav-link:focus {
-      color: #fff;
-      text-decoration: none;
-  }
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
 
-  .navbar .navbar-brand {
-      color: #fff;
-  }
+.navbar .navbar-brand {
+    color: #fff;
+}
 
 
 
-  .navbar.active {
-      background: #fff;
-      box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
-  }
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-  .navbar.active .nav-link {
-      color: #555;
-  }
+.navbar.active .nav-link {
+    color: #555;
+}
 
-  .navbar.active .nav-link:hover,
-  .navbar.active .nav-link:focus {
-      color: #555;
-      text-decoration: none;
-  }
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
 
-  .navbar.active .navbar-brand {
-      color: #555;
-  }
-
-
-  /* Change navbar styling on small viewports */
-  @media (max-width: 991.98px) {
-      .navbar {
-          background: #fff;
-      }
-
-      .navbar .navbar-brand, .navbar .nav-link {
-          color: #555;
-      }
-  }
-  .navbar-toggler{
-      background-color: rgba(0, 0, 0, 0.301);
-  }
-  .w3-lightblue{
-    background-color: rgb(158, 158, 158);
-  }
+.navbar.active .navbar-brand {
+    color: #555;
+}
 
 
-  @media screen and (max-width: 1142px) {
-    body{
-      margin-right: -30em;
-    
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
     }
-    .bg{
-      height: 200%;
-    }
-    
-  }
 
-  @media screen and (max-width: 1024px) {
-    .bg{
-      height: 150%;
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
     }
-    
-  }
-  @media screen and (max-width: 768px) {
-    .bg{
-      height: 180%;
-    }
-    
-  }
-  @media screen and (max-width: 376px) {
+}
+.navbar-toggler{
+    background-color: rgba(0, 0, 0, 0.301);
+}
+.w3-lightblue{
+  background-color: rgb(158, 158, 158);
+}
+
+
+
+
+  </style>
+
+
+
+    </head>
+<body>
+
+
+
+
+
+
+
+  <nav class="navbar navbar-expand-lg fixed-top py-3" id="header">
+            <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold"></a>
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+                
+                <div id="navbarSupportedContent" class="collapse navbar-collapse" style="font-family: Poppins;">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a href="#home" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link text-uppercase font-weight-bold">About</a></li>
+                      
+                        <li class="nav-item"><a href="#portfolio" class="nav-link text-uppercase font-weight-bold">Portfolio</a></li>
+                        <li class="nav-item"><a href="#mywork" class="nav-link text-uppercase font-weight-bold">My Work</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+ </nav>
+          <div class='bg' id="home" >
+               <div id="hi" data-aos='fade-up'>Hi I'm<br> Sasank Ananth</div>
+               <div id="student" class="students" data-aos='fade-up'> a freelance web designer</div>
+            </div>
+
+
+
+
+
+
   
-    #hi{
-      font-size: 300px;
-      word-wrap:break-word;
-      line-height: 300px;
-      align-content: center;
-      
-    }
-    .yo{
-      margin-top: 50px;
-    }
-  }
-
-
-  @media screen and (max-width: 815px) {
-    body{
-      margin-right: -40em;
-    
-    }
-    .bg{
-      height: 200%;
-    }
-  }
-
-  @media screen and (max-width: 650px) {
-    body{
-      margin-right: -80em;
-    
-    }
-    .bg{
-      height: 300%;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    
-    .bg{
-      height: 350%;
-    }
-    #hi{
-      font-size: 200px;
-      word-wrap:break-word;
-      line-height: 300px;
-      align-content: center;
-      
-    }
-
-  }
-  @media screen and (max-width: 480px) {
-    
-    .bg{
-      height: 400%;
-    }
-    #hi{
-      font-size: 150px;
-      word-wrap:break-word;
-      line-height: 300px;
-      align-content: center;
-      
-    }
-  }
-
-    </style>
-
-
-
-      </head>
-  <body>
-
-
-
-
-
-
-
-    <nav class="navbar navbar-expand-lg fixed-top py-3" id="header">
-              <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold"></a>
-                  <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
-                  
-                  <div id="navbarSupportedContent" class="collapse navbar-collapse" style="font-family: Poppins;">
-                      <ul class="navbar-nav ml-auto">
-                          <li class="nav-item active"><a href="#home" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
-                          <li class="nav-item"><a href="#about" class="nav-link text-uppercase font-weight-bold">About</a></li>
-                        
-                          <li class="nav-item"><a href="#portfolio" class="nav-link text-uppercase font-weight-bold">Portfolio</a></li>
-                          <li class="nav-item"><a href="#mywork" class="nav-link text-uppercase font-weight-bold">My Work</a></li>
-                          <li class="nav-item"><a href="#contact" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
-                      </ul>
+            <div class="w3-content w3-container w3-padding-64" id="about" >
+                <h3 class="w3-center" style="font-size: 40px;font-family: Poppins;" data-aos="zoom-in-down">ABOUT ME</h3>
+                <p class="w3-center" style="font-family: Playball; font-size: 25px;" data-aos="zoom-in-up"><em>I love website designing and graphic designing</em></p>
+                <p style="font-size: 20px;font-family: Poppins;"data-aos="zoom-in-up"> I'm Ananth Sasank Sathi, a second year B.Tech(Information Technology) student at Vellore Institute of Technology, Vellore and an alumnus  of 
+                  FIITJEE
+                  </p>
+                <div class="w3-row">
+                  <div class="w3-col m6 w3-center w3-padding-large"data-aos="fade-right"
+                 
+                  data-aos-easing="ease-in-sine">
+                    <p><b><i class="fa fa-user w3-margin-right"></i>Ananth Sasank</b></p><br>
+                    <img src="sasank.jpeg" id="photo" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="500">
                   </div>
-              </div>
-  </nav>
-            <div class='bg' id="home" >
-                <div id="hi" data-aos='fade-up'><div class="yo">Hi I'm<br> Sasank Ananth</div></div>
-                <div id="student" class="students" data-aos='fade-up'> a freelance web designer</div>
-              </div>
-
-
-
-
-
-
-    
-              <div class="w3-content w3-container w3-padding-64" id="about" >
-                  <h3 class="w3-center" style="font-size: 40px;font-family: Poppins;" data-aos="zoom-in-down">ABOUT ME</h3>
-                  <p class="w3-center" style="font-family: Playball; font-size: 25px;" data-aos="zoom-in-up"><em>I love website designing and graphic designing</em></p>
-                  <p style="font-size: 20px;font-family: Poppins;"data-aos="zoom-in-up"> I'm Ananth Sasank Sathi, a second year B.Tech(Information Technology) student at Vellore Institute of Technology, Vellore and an alumnus  of 
-                    FIITJEE
-                    </p>
-                  <div class="w3-row">
-                    <div class="w3-col m6 w3-center w3-padding-large"data-aos="fade-right"
+              
+               
+                  <div class="w3-col m6 w3-hide-small w3-padding-large" data-aos="fade-left"
                   
-                    data-aos-easing="ease-in-sine">
-                      <p><b><i class="fa fa-user w3-margin-right"></i>Ananth Sasank</b></p><br>
-                      <img src="sasank.jpeg" id="photo" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="500">
-                    </div>
-                
-                
-                    <div class="w3-col m6 w3-hide-small w3-padding-large" data-aos="fade-left"
-                    
-                    data-aos-easing="ease-in-sine">
-                      <br>
-                      <p style="font-size: 20px;font-family: Poppins;"><br>I'm a technocrat and I like to keep it 
-                        simple.My goals are to focus on typography, content, web designing and graphic designing.
-                      And besides academic stuff, I spend my time hiking, swimming and exploring.  </p>
-                    </div>
-                  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                  <div class="w3-container w3-padding-32" id="portfolio">
+                  data-aos-easing="ease-in-sine">
                     <br>
-                      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" id="portfolio" data-aos="zoom-in-down">Portfolio</h3>
-                      <p data-aos="zoom-in-up">I'm au courant and avant garde in handling 
-                      </p>
+                    <p style="font-size: 20px;font-family: Poppins;"><br>I'm a technocrat and I like to keep it 
+                      simple.My goals are to focus on typography, content, web designing and graphic designing.
+                    And besides academic stuff, I spend my time hiking, swimming and exploring.  </p>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="w3-container w3-padding-32" id="portfolio">
+                  <br>
+                    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" id="portfolio" data-aos="zoom-in-down">Portfolio</h3>
+                    <p data-aos="zoom-in-up">I'm au courant and avant garde in handling 
+                    </p>
+                  </div>
+                
+                  <div class="w3-row-padding ">
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                      <img src="HTML5.png"id="photo" alt="html" style="width:100%"  d data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom"  >
+                      <h3  data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom">Website designing</h3>
+                    
+                      <p  data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom">My areas of expertise in website designing are HTML, CSS, Javascript.I've also made a couple of websites</p>
+                   
                     </div>
-                  
-                    <div class="w3-row-padding ">
-                      <div class="w3-col l3 m6 w3-margin-bottom">
-                        <img src="HTML5.png"id="photo" alt="html" style="width:100%"  d data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom"  >
-                        <h3  data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom">Website designing</h3>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                      <img src="Blende.png" id="photo2"alt="blender" style="width:100%"  data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom">
+                      <h3  data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom">Graphic image designing</h3>
                       
-                        <p  data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom">My areas of expertise in website designing are HTML, CSS, Javascript.I've also made a couple of websites</p>
-                    
-                      </div>
-                      <div class="w3-col l3 m6 w3-margin-bottom">
-                        <img src="Blende.png" id="photo2"alt="blender" style="width:100%"  data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom">
-                        <h3  data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom">Graphic image designing</h3>
-                        
-                        <p  data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom">Graphic image designing is one of my strong-suites. I made various objects in blender.</p>
-                        
-                      </div>
-                      <div class="w3-col l3 m6 w3-margin-bottom">
-                        <img src="synfig1.png"id="synfig" alt="synfig" style="width:140%"  data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom">
-                        <h3  data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom">2d animation</h3>
-                        
-                        <p  data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom"> I'm always beguiled in animation. I started animation by making a loader for one of my websites and ever since I loved animating.</p>
+                      <p  data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom">Graphic image designing is one of my strong-suites. I made various objects in blender.</p>
                       
-                      </div>
-                    
                     </div>
+                    <div class="w3-col l3 m6 w3-margin-bottom">
+                      <img src="synfig1.png"id="synfig" alt="synfig" style="width:140%"  data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom">
+                      <h3  data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom">2d animation</h3>
+                      
+                      <p  data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom"> I'm always beguiled in animation. I started animation by making a loader for one of my websites and ever since I loved animating.</p>
+                     
+                    </div>
+                   
+                  </div>
+                
                   
-                    
-                    </div>
+                  </div>
 
 
 
@@ -343,50 +258,50 @@
 
 
 
-                  <div class="w3-content w3-container w3-padding-64" id="mywork">
-                      <div class="w3-content w3-container w3-padding-64" >
-                          <h3 class="w3-center" data-aos="zoom-in-down">MY WORK</h3>
-                          <p class="w3-center" data-aos="zoom-in-up"><em>Here are some of my latest work.<br> </em></p><br>
-                        
-                          <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-                          <div class="w3-row-padding w3-center">
-                            <div class="w3-col m3">
-                              <img src="donutgood1pinkk.png" id="photo1" data-aos="fade-left" alt="donut in blender" style="width:100%" >
-                            </div>
-                        
-                            <div class="w3-col m3">
-                              <img src="donutwithspr.png" data-aos="fade-right"id="photo" style="width:100%" >
-                            </div>
-                        
-                            <div class="w3-col m3">
-                              <img src="donutgood1pinkk.png"id="photo1"  data-aos="fade-left" style="width:100%">
-                            </div>
-                        
-                            <div class="w3-col m3">
-                              <img src="donutwithspr.png" data-aos="fade-right" id="photo"style="width:100%">
-                            </div>
+                <div class="w3-content w3-container w3-padding-64" id="mywork">
+                    <div class="w3-content w3-container w3-padding-64" >
+                        <h3 class="w3-center" data-aos="zoom-in-down">MY WORK</h3>
+                        <p class="w3-center" data-aos="zoom-in-up"><em>Here are some of my latest work.<br> </em></p><br>
+                      
+                        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+                        <div class="w3-row-padding w3-center">
+                          <div class="w3-col m3">
+                            <img src="donutgood1pinkk.png" id="photo1" data-aos="fade-left" alt="donut in blender" style="width:100%" >
                           </div>
-                    
-                        
-                          <div class="w3-row-padding w3-center w3-section">
-                            <div class="w3-col m3">
-                              <img src="donutgood1pinkk.png"id="photo1" data-aos="fade-left" style="width:100%">
-                            </div>
-                        
-                            <div class="w3-col m3">
-                              <img src="donutwithspr.png" data-aos="fade-right" id="photo"style="width:100%">
-                            </div>
-                        
-                            <div class="w3-col m3">
-                              <img src="donutgood1pinkk.png" data-aos="fade-left" id="photo1" style="width:100%" >
-                            </div>
-                        
-                            <div class="w3-col m3">
-                              <img src="donutwithspr.png" data-aos="fade-right"id="photo" style="width:100%" >
-                            </div>
-                          
+                      
+                          <div class="w3-col m3">
+                            <img src="donutwithspr.png" data-aos="fade-right"id="photo" style="width:100%" >
+                          </div>
+                      
+                          <div class="w3-col m3">
+                            <img src="donutgood1pinkk.png"id="photo1"  data-aos="fade-left" style="width:100%">
+                          </div>
+                      
+                          <div class="w3-col m3">
+                            <img src="donutwithspr.png" data-aos="fade-right" id="photo"style="width:100%">
                           </div>
                         </div>
+                  
+                      
+                        <div class="w3-row-padding w3-center w3-section">
+                          <div class="w3-col m3">
+                            <img src="donutgood1pinkk.png"id="photo1" data-aos="fade-left" style="width:100%">
+                          </div>
+                      
+                          <div class="w3-col m3">
+                            <img src="donutwithspr.png" data-aos="fade-right" id="photo"style="width:100%">
+                          </div>
+                      
+                          <div class="w3-col m3">
+                            <img src="donutgood1pinkk.png" data-aos="fade-left" id="photo1" style="width:100%" >
+                          </div>
+                      
+                          <div class="w3-col m3">
+                            <img src="donutwithspr.png" data-aos="fade-right"id="photo" style="width:100%" >
+                          </div>
+                         
+                        </div>
+                      </div>
 
 
 
@@ -399,24 +314,23 @@
 
 
 
-                        
-                        <div class="w3-content w3-container w3-padding-64" id="contact">
-                          <h3 class="w3-center" data-aos="zoom-in-down">WHERE I LIVE</h3>
-                          <p style="text-align: center;" data-aos="zoom-in-up">Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>  
-                        
-                          <div class="w3-row w3-padding-32 w3-section">
-                            <div class="w3-col m4 w3-container">
-                              <img src="rajahmundry.jpg" data-aos="zoom-in-right" class="w3-image w3-round" style="width:100%">
+                      
+                      <div class="w3-content w3-container w3-padding-64" id="contact">
+                        <h3 class="w3-center" data-aos="zoom-in-down">WHERE I LIVE</h3>
+                        <p style="text-align: center;" data-aos="zoom-in-up">Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>  
+                      
+                        <div class="w3-row w3-padding-32 w3-section">
+                          <div class="w3-col m4 w3-container">
+                            <img src="rajahmundry.jpg" data-aos="zoom-in-right" class="w3-image w3-round" style="width:100%">
+                          </div>
+                          <div class="w3-col m8 w3-panel" data-aos="zoom-in-left">
+                            <div class="w3-large w3-margin-bottom">
+                              <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Rajahmundry, AP<br>
+                              <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 9392935253<br>
+                              <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: sasankananth@gmail.com<br>
                             </div>
-                            <div class="w3-col m8 w3-panel" data-aos="zoom-in-left">
-                              <div class="w3-large w3-margin-bottom">
-                                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Rajahmundry, AP<br>
-                                <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 9392935253<br>
-                                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: sasankananth@gmail.com<br>
-                              </div>
-                          
-                              
-                            </div>
+                         
+                            
                           </div>
                         </div>
                       </div>
@@ -430,53 +344,52 @@
       </div>
     </div>
   </div>
+</div>
 
 
 
 
 
 
-  <footer class="w3-center w3-lightblue w3-padding-64 w3-opacity w3-hover-opacity-off" data-aos="fade-down">
-    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <div class="w3-xlarge w3-section">
-      <a href="https://www.facebook.com/sasank.ananth" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-      <a href="https://www.instagram.com/sasank_ananth/?hl=en" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-      <a href="https://in.pinterest.com/sasankananth/" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
-      <a href="https://twitter.com/AnanthSasank" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-      <a href="https://www.linkedin.com/in/sasank-ananth-sathi-68b70a1a2/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    </div>
-  
-  </footer>
+<footer class="w3-center w3-lightblue w3-padding-64 w3-opacity w3-hover-opacity-off" data-aos="fade-down">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/sasank.ananth" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/sasank_ananth/?hl=en" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://in.pinterest.com/sasankananth/" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/AnanthSasank" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/sasank-ananth-sathi-68b70a1a2/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+ 
+</footer>
 
-                      
-
-
-
-          
-              <script>
-              
-                  $(function () {
-      $(window).on('scroll', function () {
-          if ( $(window).scrollTop() > 10 ) {
-              $('.navbar').addClass('active');
-          } else {
-              $('.navbar').removeClass('active');
-                  }
-                });
-                    });
-
-                  </script>
-                  
-                  <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
-                  <script src="aos.js" ></script>
-                  <script type="text/javascript">
-                  AOS.init({
-                    duration:2000,
-                  })
-                  </script>
-    </body>
+                    
 
 
+
+        
+            <script>
+             
+                $(function () {
+    $(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 10 ) {
+            $('.navbar').addClass('active');
+        } else {
+            $('.navbar').removeClass('active');
+                }
+               });
+                  });
+
+                </script>
+                
+                <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+                <script src="aos.js" ></script>
+                <script type="text/javascript">
+                AOS.init({
+                  duration:2000,
+                })
+                </script>
+   </body>
 
 
 
@@ -489,4 +402,6 @@
 
 
 
-  </html>
+
+
+</html>
